@@ -2,13 +2,25 @@
 
 <head>
     <title>Slap Object Game</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/game.min.css">
 
 </head>
 
 <body>
+    <h2 class="gameTitle">The Slap Game</h2>
+    <span>Health:  <span id="health">--</span> Target: <span id="name">--</span> Hits: <span id="hits">--</span></span>
+    <div>
+        <img src="https://thumbs.gfycat.com/PastCookedCuscus-size_restricted.gif" width=200px alt="Scarecrow gif">
+    </div>
+    <div class="container">
+        <div class="row">
+            <button class="button btn btn-danger" onclick="slap()">Slap!</button>
+            <button class="button btn btn-warning" onclick="punch()">Punch!</button>
+            <button class="button btn btn-primary" onclick="kick()">Kick!</button>
 
+        </div>
+    </div>
     <script src="app/game.js"></script>
 </body>
 

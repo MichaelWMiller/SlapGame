@@ -8,13 +8,13 @@ Students will use javascript in order to interact with the DOM to create a dynam
 1. Create a git repository named SlapGame
 2. Create the file index.html and a script file called game.js and a css file name game.css.
 3. Commit changes and push them back to GitHub.
-
+DONE!
 ### Step 2 - HTML - Create page layout and Slap button
 
 1. Link Bootstrap game.js and game.css to index.html.
 2. Add an image to the body with a width of 200px this is your "target"
 3. Add a button to the footer with the text "Slap"
-
+DONE!
 ### Step 3 - JS - Declare variables and write the Slap function
 
 1. Create a global variable: var health=100;
@@ -24,6 +24,7 @@ Students will use javascript in order to interact with the DOM to create a dynam
   - Test the function by calling slap() at the end of the game.js file. 
     - You should see an alert of 99 show on the screen.
     - If this is working, remove the test to prevent popups on every page load.
+  DONE!
 
 ### Step 4 - HTML - Link the Slap button to the Slap function
 
@@ -36,6 +37,7 @@ Students will use javascript in order to interact with the DOM to create a dynam
 <span>Health:<span id="health">--</span></span>
 ```
   - The id is important so we can call the element from JS easily.
+DONE!
 
 ### Step 5 - JS - Update the user interface
 
@@ -48,7 +50,7 @@ Students will use javascript in order to interact with the DOM to create a dynam
 3. Add a call to the update() function at the bottom of your js file. If it is working, you should see the target's health on the screen.
   - There is no need to delete the call you just added, it is recommended so you always start off with populated values.
 4. If it is working, make sure you add a call to update at the end of the slap function. This way the screen is updated after every slap.
-
+DONE!
 
 ### Step 6 - HTML - Add the other buttons and stuff...
 
@@ -61,7 +63,7 @@ Students will use javascript in order to interact with the DOM to create a dynam
     this variable should be increased by 1.
 3. Add a placeholder for target name, and hits inside the header next to health.
 4. Wire everything up like you did for "Slap".
-
+DONE!
 ### Step 7 - Testing Time
 1. You should now have a functioning application. Test the following
   - In the panel header you should see an indicator for Health, Name, and Hits; their respective values should be 100, "Whatever Name       You Chose", and 0.
@@ -69,7 +71,7 @@ Students will use javascript in order to interact with the DOM to create a dynam
   - Click the punch button, you should see the target health drop to 94 and hit count to 2.
   - Finally click the Kick button, you should see the target health drop to 84 and hit count to 3.
   - Keep pressing buttons... What happens when the target has been hit for over 100 hit points? Why does this happen?
-
+DONE!
 ### Requirements   
   - Visualization: 
       - Current Health and Health Updates are visible while game is being played

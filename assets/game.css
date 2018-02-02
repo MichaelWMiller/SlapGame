@@ -1,1 +1,10 @@
-null
+body {
+  background-color: #f3f3f3;
+}
+
+.gameTitle {
+  color: #f03264;
+  background-color: #f3f3f3;
+  font-family: impact;
+  font-size: 3rem;
+}
