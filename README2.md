@@ -54,7 +54,7 @@ You could of course create targets using an object literal `{}` but it might mak
 #### Warning Refactoring will break your code.... But its okay. Don't be afraid to break things.
 
 Now work on converting your global variables to properties that can be used through a `Target constructor`. This will make it so you have to update your code in your `update` function to something like `target.health`
-
+DONE!
 ### Step 2 - Items (2pts)
 - It's now time to add items to our game. Items are objects that will be created using a constructor.
   the items are responsible for reducing or increasing the damage done to the target on hit.
@@ -69,7 +69,7 @@ var Obj = function(option1, option2, option3){
 	this.option3 = option3;
 }
 ```
- 
+ DONE!
 ### Step 3 - Create the items
 - Since our game will have multiple items, we need to find an easy way to access them. 
  We can use an array to store a collection of objects. However, arrays are not always the easiest to use, because they require us
@@ -86,7 +86,7 @@ var items = {
 ```
  - We can now easily reference the shield item by calling items.shield.
  - What would items.shield.name return?
- 
+ DONE!
 ### Step 4 - Give some items to our target
 - We are using an object to store the master list of items in our game. However, we need to be able to give our 
   target items. In this case, we need to use an array, because it may be possible for the user to have multiples of the same item.
@@ -99,10 +99,10 @@ var ryu = {
   ....
   items:[]
 ``` 
-
+DONE!
 2. Keep in mind that the \[items] object that is global, is completly different than the \[items] array on the target.
 3. Now write a function (something like giveShield()) that will push an item from the global items object into the items array on the target.
- 
+ DONE!
 ### Step 5 - REDUCE THE DAMAGE!... almost
 - How are you at math?
 1. Create a function that will be called, addMods().
@@ -115,7 +115,7 @@ var ryu = {
 	4. Arrays need to be accessed by index. \[i]
 	
 3. Have the function return the total.
-
+DONE!
 ### Step 6 - REDUCE THE DAMAGE!... for real this time.
 - Before you begin this step, remember math in javascript
   is the same as on paper. Order of operations matters: **5 * .3 =  1.5**
@@ -127,7 +127,7 @@ var ryu = {
 this.health -= damage * this.addMods();
 ```
 - If there are no mods the total should be 1
-
+DONE!
 ### Step 7 - Let the user select the Items.
 - Add a div in the body with an id="items" and put a button for each item
 - Write a function that will allow the user to click each button and giveItem("item") to the target
