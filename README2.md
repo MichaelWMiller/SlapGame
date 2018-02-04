@@ -127,7 +127,7 @@ DONE!
 this.health -= damage * this.addMods();
 ```
 - If there are no mods the total should be 1
-DONE!
+DONE! 
 ### Step 7 - Let the user select the Items.
 - Add a div in the body with an id="items" and put a button for each item
 - Write a function that will allow the user to click each button and giveItem("item") to the target

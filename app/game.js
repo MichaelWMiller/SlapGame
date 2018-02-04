@@ -1,9 +1,3 @@
-/**
- * DICTIONARY AND REQUIREMENTS
- * 
- * 
- */
-
 var health = 100;
 var hits = 0;
 var name = "gandolf";
@@ -63,12 +57,10 @@ var players = {
 
 function giveItem(tool) {
     var itm = items[tool]
-        //console.log(itm)
     var name = document.getElementById("name").textContent
-    console.log(name)
+
     if (players.name == name) {
         players.items.push(itm)
-        console.log(players.items)
     }
     switch (tool) {
         case "shield":
@@ -85,41 +77,28 @@ function giveItem(tool) {
     }
     update()
     addMods(name)
-    console.log()
+
     return players
 }
 
+function addMods() {
 
-giveItem("mace")
-
-// function addMods(name) {
-//     var mods = 0
-//     var arr = name.items
-//     for (var i = 0; i < arr.length; i++) {
-//         if (arr[i]) {
-//             mods++
-//         }
-//     }
-//     return mods
-// }
-
-function addMods(name) {
     var shields = 0
     var hammers = 0
     var maces = 0
-    var arr = name.items
+    var arr = players.items
     var nbrShields = document.getElementById("nbrShields")
     var nbrHammers = document.getElementById("nbrHammers")
     var nbrMaces = document.getElementById("nbrMaces")
-    var tool = arr[i].name
     for (var i = 0; i < arr.length; i++) {
+        var tool = arr[i].name.toString()
         switch (tool) {
             case "shield":
                 shields++
                 break
             case "hammer":
                 hammers++
-                break
+                break;
             case "mace":
                 maces++
                 break
@@ -127,8 +106,8 @@ function addMods(name) {
                 break
         }
     }
+
     document.getElementById("nbrShields").innerText = shields
     document.getElementById("nbrHammers").innerText = hammers
     document.getElementById("nbrMaces").innerText = maces
-
 }
